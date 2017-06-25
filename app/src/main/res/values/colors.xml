@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dandelion">#F0E1B5</color>
+    <color name="seafoam">#74D4CD</color>
+    <color name="aubergine">#AAA1AE</color>
+    <color name="blackish">#080808</color>
+    <color name="carnation">#F6A4B6</color>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Event Coordinator</string>
+
+    <string name="add_event">Add Event</string>
+    <string name="new_event">New Event</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="delete_event">Delete Event</string>
+
+    <string name="phone_num">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="max_occupancy">Maximum Occupancy</string>
+    <string name="notes">Notes</string>
+    <string name="host">Hosted by</string>
+
+    <string name="venues">Venues</string>
+    <string name="add_venue">Add Venue</string>
+    <string name="edit_venue">Edit Venue</string>
+    <string name="delete_venue">Delete Venue</string>
+
+    <string name="description">Description</string>
+
+    <string name="ev_at_venue">Events at this Venue</string>
+
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="na">N/A</string>
+</resources>

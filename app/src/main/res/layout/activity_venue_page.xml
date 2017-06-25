@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seafoam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/venue_page_event_buttons"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/venue_page_new_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_event" />
+
+        </LinearLayout>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="com.rlyth.eventplanner.EventPage"
+        android:id="@+id/venue_page_info_block"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/EntryPageName"
+            android:id="@+id/venue_page_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/venue_page_address"
+            android:text="@string/na"
+            style="@style/EntryPageSubItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="@string/phone_num" />
+
+        <TextView
+            android:id="@+id/venue_page_phone"
+            android:text="@string/na"
+            style="@style/EntryPageSubItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="@string/max_occupancy" />
+
+        <TextView
+            android:id="@+id/venue_page_occupancy"
+            android:text="@string/na"
+            style="@style/EntryPageSubItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/venue_page_description"
+            android:text="@string/na"
+            style="@style/EntryPageSubItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/venue_page_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/edit_venue" />
+
+        <Button
+            android:id="@+id/venue_page_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete_venue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="com.rlyth.eventplanner.EventPage"
+        android:id="@+id/venue_page_event_block"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/venue_page_event_buttons"
+        android:layout_below="@id/venue_page_info_block"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/venue_page_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/ev_at_venue" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/venue_page_event_list" />
+    </LinearLayout>
+</RelativeLayout>
